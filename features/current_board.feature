@@ -4,4 +4,4 @@ Feature: the current board
 Scenario: I want to see the nodes currently on the board
   Given there are nodes linked to a root in the database
   When I visit the current board page
-  Then I see the nodes on the page
+  Then I see the nodes on the page as JSON
