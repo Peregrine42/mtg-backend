@@ -8,7 +8,7 @@ Given(/^there are nodes linked to a root in the database$/) do
 end
 
 When(/^I visit the current board page$/) do
-  visit "/"
+  visit "/trees/1.json"
 end
 
 Then(/^I see the nodes on the page as JSON$/) do
