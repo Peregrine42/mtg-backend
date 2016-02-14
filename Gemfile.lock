@@ -84,6 +84,7 @@ GEM
     multi_test (0.1.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    oj (2.14.4)
     rabl (0.11.8)
       activesupport (>= 2.3.14)
     rack (1.6.4)
@@ -169,6 +170,7 @@ DEPENDENCIES
   byebug
   cucumber-rails
   database_cleaner
+  oj
   rabl
   rails (= 4.2.5.1)
   rspec-rails
