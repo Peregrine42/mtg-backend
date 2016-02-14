@@ -1,3 +1,7 @@
 class Root < ActiveRecord::Base
-  belongs_to :node
+  has_one :node, as: :graphable
+  
+  def character
+    return { "root" => true }
+  end
 end

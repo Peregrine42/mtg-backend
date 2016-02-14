@@ -1,5 +1,5 @@
 class TreesController < ApplicationController
   def show
-    @tree = Tree.new id: params[:id]
+    @node = Node.find(params[:id])
   end
 end

@@ -26,9 +26,14 @@ ActiveRecord::Schema.define(version: 20160213211836) do
     t.integer  "y"
     t.float    "rot"
     t.float    "scale"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "graphable_id"
+    t.string   "graphable_type"
   end
+
+  add_index "nodes", ["graphable_type", "graphable_id"], name: "index_nodes_on_graphable_type_and_graphable_id"
+  add_index "nodes", ["id"], name: "index_nodes_on_id"
 
   create_table "roots", force: :cascade do |t|
     t.integer  "node_id"

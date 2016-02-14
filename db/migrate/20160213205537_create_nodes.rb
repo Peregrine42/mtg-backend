@@ -7,6 +7,8 @@ class CreateNodes < ActiveRecord::Migration
       t.float :rot
       t.float :scale
       t.timestamps null: false
+      t.references :graphable, polymorphic: true, index: true
     end
+    add_index :nodes, :id
   end
 end
